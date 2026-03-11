@@ -1,0 +1,124 @@
+{
+  "design_guidelines": {
+    "project_name": "Cat House Riyadh",
+    "theme": "light",
+    "tone": "Luxury, Warm, Playful, Sophisticated",
+    "typography": {
+      "headings": {
+        "font_family": "Playfair Display, serif",
+        "weights": ["400", "600", "700"],
+        "usage": "Use for all section titles, hero headings, and feature names. Letter-spacing: tight.",
+        "cdn_url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+      },
+      "body": {
+        "font_family": "Manrope, sans-serif",
+        "weights": ["300", "400", "500", "600"],
+        "usage": "Use for paragraphs, navigation, buttons, and UI elements. Letter-spacing: normal.",
+        "cdn_url": "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap"
+      }
+    },
+    "colors": {
+      "primary": "#1A1A1A",
+      "secondary": "#F5F0EB",
+      "accent": "#D4AF37",
+      "background": "#FFFFFF",
+      "surface": "#F9F9F9",
+      "text": {
+        "primary": "#1A1A1A",
+        "secondary": "#5A5A5A",
+        "light": "#FFFFFF"
+      },
+      "palette_instructions": "Use 'Secondary' (#F5F0EB) for section backgrounds to create warmth. Use 'Accent' (#D4AF37) sparingly for buttons or key highlights. 'Primary' (#1A1A1A) is for text and high-contrast elements."
+    },
+    "layout_strategy": {
+      "grid_system": "Bento Grid (refer to MODE A in principles)",
+      "spacing": "Generous. Use p-12, p-16, p-24 for section padding.",
+      "container": "max-w-7xl mx-auto px-6",
+      "radius": "rounded-2xl or rounded-3xl for cards/images"
+    },
+    "components": {
+      "buttons": {
+        "style": "Pill-shaped or soft rounded corners (rounded-full or rounded-xl).",
+        "variants": {
+          "primary": "bg-[#1A1A1A] text-white hover:bg-[#333333] transition-colors duration-300",
+          "secondary": "bg-[#F5F0EB] text-[#1A1A1A] hover:bg-[#E8E0D5] transition-colors duration-300",
+          "outline": "border border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-colors duration-300"
+        }
+      },
+      "cards": {
+        "style": "Flat with subtle border (border-[#E5E5E5]) or soft shadow (shadow-sm). Hover: slight lift (-translate-y-1) and shadow-md.",
+        "background": "bg-white or bg-[#F9F9F9]"
+      },
+      "inputs": {
+        "style": "bg-[#F5F0EB] border-transparent focus:border-[#D4AF37] focus:ring-0 rounded-xl px-4 py-3"
+      }
+    },
+    "motion": {
+      "library": "framer-motion",
+      "scroll": "lenis (smooth scrolling is MANDATORY)",
+      "variants": {
+        "fadeInUp": {
+          "initial": { "opacity": 0, "y": 20 },
+          "whileInView": { "opacity": 1, "y": 0 },
+          "transition": { "duration": 0.6, "ease": "easeOut" }
+        },
+        "staggerContainer": {
+          "hidden": { "opacity": 0 },
+          "show": {
+            "opacity": 1,
+            "transition": { "staggerChildren": 0.1 }
+          }
+        }
+      }
+    },
+    "assets": {
+      "icons": "Phosphor Icons (React) - Weight: 'light' or 'regular'",
+      "images": {
+        "hero": {
+          "url": "https://images.unsplash.com/photo-1621438506251-ff57c10a9969?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Majestic white Persian cat lounging luxuriously",
+          "position": "Hero Section Right Side"
+        },
+        "grooming": {
+          "url": "https://images.unsplash.com/photo-1725419876939-f8f9987cf0d2?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Professional grooming service with hair dryer",
+          "position": "Services Card 1"
+        },
+        "supplies": {
+          "url": "https://images.unsplash.com/photo-1728055813155-208b00e820b4?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Cat playing with premium toy",
+          "position": "Services Card 2"
+        },
+        "about": {
+          "url": "https://images.unsplash.com/photo-1601105714287-6a23c4c9fda0?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Happy owner holding a kitten",
+          "position": "About Section"
+        },
+        "gallery": [
+          "https://images.unsplash.com/photo-1634836893095-4654741ef92f?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "https://images.unsplash.com/photo-1642161192088-94272fb23d98?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "https://images.unsplash.com/photo-1611472968483-96e793289cad?crop=entropy&cs=srgb&fm=jpg&q=85"
+        ]
+      }
+    },
+    "technical_instructions": {
+      "map_embed": "Use an iframe with src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.787679366666!2d46.730!3d24.700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzAwLjAiTiA0NsKwNDMnNDguMCJF!5e0!3m2!1sen!2ssa!4v1625640000000!5m2!1sen!2ssa' (This is a generic Riyadh central coordinate. Add a note below map: 'Umar Ibn Abdul Aziz Branch Rd, Az Zahra, Riyadh 12812')",
+      "whatsapp_link": "https://wa.me/966595227853",
+      "packages": [
+        "yarn add @phosphor-icons/react",
+        "yarn add framer-motion",
+        "yarn add lenis",
+        "yarn add react-fast-marquee"
+      ]
+    },
+    "universal_guidelines": [
+      "Do NOT use 'Inter' font for headings.",
+      "Ensure all interactive elements have data-testid attributes.",
+      "Use 'lenis' for smooth scrolling.",
+      "Maintain a 4.5:1 contrast ratio for text.",
+      "Responsive: Mobile-first approach.",
+      "No gradients for text.",
+      "Use 'sonner' for toasts."
+    ]
+  }
+}
