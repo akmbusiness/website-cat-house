@@ -19,7 +19,7 @@ const services = [
   {
     icon: ShoppingBag,
     title: 'Pet Supplies',
-    description: 'A huge selection of premium cat food, treats, litter, toys, beds, and accessories from top brands like Royal Canin, Hills, Brit, and Applaws.',
+    description: 'A huge selection of premium cat food, treats, litter, toys, beds, and accessories from top brands like Royal Canin, Hills, Brit, Whiskas, Cat Plus, Huraira, Loqma and Purina.',
     badge: '100s of Products',
     img: 'https://customer-assets.emergentagent.com/job_whisker-store-1/artifacts/4c77ck6o_Screenshot%202026-03-09%20052551.png',
   },

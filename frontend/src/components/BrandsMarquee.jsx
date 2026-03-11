@@ -1,8 +1,7 @@
 import Marquee from 'react-fast-marquee';
 
 const brands = [
-  'Royal Canin', 'Hills Science Plan', 'Brit Care', 'Applaws',
-  'Life Cat', 'Schesir', 'Whiskas', 'Biokat\'s', 'VanCat', 'ProArt', 'Purina',
+  'Cat Plus', 'Royal Canin', 'Whiskas', 'Huraira', 'Brit', 'Loqma', 'Purina', 'Hills',
 ];
 
 export default function BrandsMarquee() {
