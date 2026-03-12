@@ -21,5 +21,19 @@ h1, h2, h3, h4 {
 }
 
 section {
-  scroll-margin-top: 68px;
+  scroll-margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+  section {
+    scroll-margin-top: 68px;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

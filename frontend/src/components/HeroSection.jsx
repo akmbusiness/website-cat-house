@@ -7,7 +7,7 @@ export default function HeroSection() {
   const scrollTo = (id) => document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section id="hero" data-testid="hero-section" className="min-h-screen pt-[68px] flex items-center bg-white overflow-hidden">
+    <section id="hero" data-testid="hero-section" className="min-h-screen pt-[100px] md:pt-[68px] flex items-center bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 py-16 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
